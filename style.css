@@ -72,6 +72,7 @@ section.main-tools {
 canvas {
 	height: 800px;
 	max-width: 800px;
+	width: 100%;
 	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
