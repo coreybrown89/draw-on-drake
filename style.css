@@ -1,0 +1,120 @@
+body {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	color: white;
+	font-size: 28px;
+	padding-left: 50px;
+}
+
+nav {
+	padding-right: 50px;
+}
+
+nav a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 1px rgba(0,0,0,.3);
+  margin-left: 5px;
+  padding: 12px 25px;
+  background-color: #ff4081;
+}
+
+header.main-header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #4a148c;
+}
+
+section.main-tools {
+	position: fixed;
+	left: 20px;
+	top: 150px;
+}
+
+.color-picker {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	margin: 5px;
+	box-shadow: 0 0 8px 5px rgba(0,0,0,.08);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.color-picker:hover {
+	height: 40px;
+	width: 40px;
+}
+
+.js-color.active .color-picker {
+	height: 50px;
+	width: 50px;
+}
+
+.tools {
+	z-index: 100;
+}
+
+canvas {
+	height: 800px;
+	max-width: 800px;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
+
+canvas {
+	margin: 0 auto;
+}
+
+canvas#colors_sketch {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 20px 15px rgba(0,0,0,.06)
+}
+
+
+@media screen and (max-width: 780px) {
+	section.main-tools {
+  transform: rotate(-90deg);
+  z-index: 999;
+  position: fixed;
+  top: -20px;
+  right: 50%;
+  left: 50%;
+}
+
+canvas#colors_sketch {
+  top: 165px;
+}
+
+header.main-header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+h1 {
+  padding: 0;
+
+}
+}
