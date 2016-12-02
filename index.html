@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Draw on Drake</title>
+        <meta name="description" content="A simple drake coloring book. Join the fun.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
@@ -12,6 +12,11 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
 
+        <!-- For the books -->
+        <meta property="og:url" content="http://drawondrake.com/" >
+        <meta property="og:title" content="Draw on Drake" >
+        <meta property="og:description" content="A simple drake coloring book. Join the fun." >
+        <meta property="og:image" content="https://s3.amazonaws.com/draw-on-drake/drake-screen.jpg" >
 
                <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -25,6 +30,7 @@
     <header class="main-header">
     	<div class="logo"><h1>Draw on Drake</h1></div>
     	<nav>
+        <a class="alt-btn" href="http://facebook.com/sharer/sharer.php?u=http://drawondrake.com"><i class="ion-android-share-alt"></i>Share</a>
     		<a href="index.html">Clear</a>
     		<!-- <a href="#colors_sketch" data-download="png">Print</a> -->
         <!-- <i class="ion-navicon-round"></i> -->
@@ -65,8 +71,12 @@
     </section>
    
 	<div class="color-paper">
-		<canvas id="colors_sketch" width="800" height="800" style="background-image: url('images/drake.jpg');"></canvas>
+		<canvas id="colors_sketch" width="800" height="800" style="background-image: url('https://s3.amazonaws.com/draw-on-drake/drake.jpg');"></canvas>
 	</div>
+
+  <footer>
+   <p>Give Drake some <span><i class="ion-heart"></i></span> and <a href="https://github.com/coreybrown89/draw-on-drake" target="_blank">contribute to the repro.</a></p>
+ </footer>
 <script type="text/javascript">
   $(function() {
     $('#colors_sketch').sketch({defaultColor: "#ff0000"});
@@ -95,6 +105,7 @@
   	}
  </script>
 
+
 <!-- Google Analytics  --> 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -104,7 +115,6 @@
 
   ga('create', 'UA-88331201-1', 'auto');
   ga('send', 'pageview');
-
 </script>
   		
     </body>

@@ -1,6 +1,7 @@
 body {
 	position: relative;
 	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
 }
 
@@ -14,6 +15,8 @@ h1 {
 
 nav {
 	padding-right: 50px;
+	display: flex;
+	align-items: center;
 }
 
 nav i {
@@ -43,6 +46,22 @@ header.main-header {
 	align-items: center;
 	background-color: #4a148c;
 }
+
+a.alt-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: transparent;
+}
+
+a.alt-btn i {
+	margin: 0;
+	padding: 0;
+	line-height: 1em;
+	margin-right: 20px;
+	color: #ff4081;
+}
+
 
 
 /*  Tools
@@ -91,6 +110,15 @@ section.main-tools {
 	margin-left: 10px;
 }
 
+.color-paper {
+  max-width: 800px;
+  margin: 0 auto;
+  max-height: 800px;
+  margin-bottom: 150px;
+}
+/*  Canvas
+-----------------------*/
+
 canvas {
 	height: 800px;
 	max-width: 800px;
@@ -106,11 +134,37 @@ canvas {
 }
 
 canvas#colors_sketch {
-  position: absolute;
-  top: 190px;
-  left: 0;
-  right: 0;
   box-shadow: 0 0 20px 15px rgba(0,0,0,.06)
+}
+
+/*  Footer
+-----------------------*/
+
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	height: 80px;
+	padding: 20px 50px;
+	background-color: #ebeff0;
+}
+
+footer p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #7f8c8d;
+}
+footer span i {
+	color: #ff4081;
+}
+
+footer a {
+	text-decoration: none;
+	color: #7f8c8d;
+
 }
 
 
@@ -146,5 +200,9 @@ canvas#colors_sketch {
 	nav {
 	  padding: 0;
 	  margin-bottom: 10px;
-}
+	}
+
+	footer p {
+		text-align: center;
+	}
 }
