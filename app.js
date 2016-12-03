@@ -25,5 +25,5 @@ $(document).ready(function(){
 	});
 
 	// set default draw color 
-	$('#colors_sketch').sketch({defaultColor: "rgba(0,0,0,.5)"});
+	$('#colors_sketch').sketch({defaultColor: "#1d2832"});
 });

@@ -92,7 +92,7 @@ section.main-tools {
 .brush-picker {
 	display: flex;
 	align-items: center;
-	background-color: black;
+	background-color: #1d2832;
 	border-radius: 50%;
 	transition: all .1s ease-in-out;
 }
