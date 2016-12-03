@@ -89,16 +89,12 @@ section.main-tools {
 	transition: all .2s ease-in-out;
 }
 
-
-.js-color.active .color-picker {
-	border-color: #333;
-}
-
 .brush-picker {
 	display: flex;
 	align-items: center;
 	background-color: black;
 	border-radius: 50%;
+	transition: all .1s ease-in-out;
 }
 
 .brush-size-container {

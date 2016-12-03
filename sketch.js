@@ -72,7 +72,7 @@ var __slice = Array.prototype.slice;
         format = "jpeg";
       }
       mime = "image/" + format;
-      return window.open(this.el.toDataURL(mime)) + window.print();
+      return window.open(this.el.toDataURL(mime));
 
     };
     Sketch.prototype.set = function(key, value) {
